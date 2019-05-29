@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    
+    background: #006dae;
+}
+
+/**********************************/
+
+/* Buttons */
+
+#returnBtn {
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    line-height: 20px;
+    font-size: 10px;
+    background: #006dae;
+    width: 85px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: 1px solid #262626;
+    
+    position: fixed;
+    top: 10px;
+    left: 30px;
+}
+
+#returnBtn:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+ul {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    background: #fff;
+    width: 70px;
+    color: #262626;
+    margin: 4px 10px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: 1px solid #262626;
+    
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+      opacity: 0;
+      transform: translateY(-300px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+ul li a:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+ul li a:active {
+    background: #ff2a4f;
+}
+
+/**********************************/
+
+/* Main content */
+
+#container {
+    width: 100%;
+    height: 100vh;
+}
+
+#container div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#container div h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/**********************************/
+
+/* Autopilot */
+
+#container div#autopilot {
+    background: #006dae;
+}
+
+#container div#autopilot video {
+/*    background: #720e0e;*/
+    height: 100%;
+
+    /* Center media */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**********************************/
+
+/* Motor */
+
+#container div#motor img {
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#disclaimer {
+    font-size: 12px;
+    color: yellow;
+}
+
+#motor {
+    background: #006dae;
+}
+
+#motor .motorTxt {
+    font-size: 14px;
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    background-color: #006dae;
+    opacity: 0.65;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 36%;
+    max-height: 40%;
+    border-radius: 15px;
+    white-space: inherit;
+    overflow: auto;
+}
+
+#motor .tooltipMotor {
+    top: -300px;
+    left: 900px;
+}
+
+#motor .tooltipMotor .tooltipContent1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #006dae;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    opacity: 0.6;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+#motor .tooltipMotor:hover .tooltipContent1 {
+  visibility: visible;
+}
+
+/**********************************/
+
+/* Operation */
+
+#statorRotor {
+    height: 100%;
+
+    /* Center media */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#motorSpec {
+    background: #006dae;
+}
+
+#motorSpec .motorSpecTxt {
+    font-size: 14px;
+    position: absolute;
+    bottom: 25%;
+    left: 30%;
+    background-color: #041722;
+    opacity: 0.65;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 40%;
+    max-height: 45%;
+    border-radius: 15px;
+    white-space: inherit;
+    overflow: auto;
+}
+
+#motorSpec .motorSpecTxt h2 {
+    text-align: center;
+}
+
+/**********************************/
+
+/* Efficiency */
+
+#efficiency .imgHover {
+    border-radius: 20px;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    
+
+    position: relative;
+    width: 75%;
+    top: 15%;
+    left: 15%;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+#efficiency .imgHover:hover {
+    -ms-transform: scale(1.10);
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+    
+    opacity: 0.3;
+}
+
+/*
+.imgBox:hover .overlay {
+  opacity: 0.8;
+}
+*/
+
+/* $ $ $ $ $ $ $ */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    font-size: 14px;
+    background-color: #333;
+    opacity: 0.9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+/**********************************/

@@ -1,0 +1,63 @@
+/* body config. */
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+nav, footer {
+    background: #006dae;
+}
+
+h6 {
+    color: #2a2a2a;
+}
+/* **************** */
+
+/* Blinking Charger */
+.blink {
+    color: darkgreen;
+	animation: blink 1s linear infinite;
+    display: inline;
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+/* **************** */
+
+
+/* Icons and reference */
+.elecMotor {
+    width: 280px;
+    height: 250px;
+    float: left;
+}
+
+#wrench, #conversion, #recycle {
+    color: darkcyan;
+    font-size: 18px;
+}
+
+#enrol {
+    color: firebrick;
+    font-size: 22px;
+}
+
+#animationRef {
+    font-size: 12px;
+}
+/* **************** */
+
+/*
+video {
+    width: 100%;
+    height: auto;
+}
+*/

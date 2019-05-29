@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hoverTesla</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/hoverStyle.css">
+    </head>
+    
+    <body>
+        
+        <ul>
+            <li><a href="#autopilot">autopilot</a></li>
+            <li><a href="#motor">motor</a></li>
+            <li><a href="#motorSpec">operation</a></li>
+            <li><a href="#efficiency">efficiency</a></li>
+        </ul>
+        
+        <div id="container">
+            
+            <div id="autopilot">
+                <video autoplay loop muted>
+                    <source src="gallery/tesla/Full%20Self-Driving.mp4" type="video/mp4">
+                    <source src="gallery/tesla/Full%20Self-Driving.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div id="motor">                
+                <img src="gallery/tesla/TeslaMotor.JPG" alt="modelS_chassis">
+                
+<!--                <h2 id="h2tooltipSym">&#63;</h2>-->
+                
+                <div class="tooltipMotor">
+                    <span class="tooltipContent1">Induction Motor  &#40;combined with Power Inverter&#41;</span>
+                </div>
+                
+                <div class="motorTxt">
+                    <em id="disclaimer">&#42; &#42; &#42; &#42; &#42; Hover over highlighted region in red &#40;rear-end&#41; &#42; &#42; &#42; &#42; &#42;</em>
+                    <h2>Tesla Induction Motor</h2>
+                        <p>For an induction motor, its speed depends on the frequency of the AC power supply; thus, varying the frequency of the power supply enables us to alter the drive wheel speed - <em>reliable</em> and <em>easy speed control</em></p><br>
+                    
+                        <p>IC can only produce usable torque and power output only within limited speed range - <em>a significant disadvantage</em></p><br>
+                    
+                        <p>On the other hand, an induction motor will work efficiently in any speed range</p>
+                </div>    
+                
+            </div>
+            
+            <div id="motorSpec">
+                
+                <video id="statorRotor" autoplay loop muted>
+                  <source src="gallery/statorRotor.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                
+                <div class="motorSpecTxt">
+                    <h2>Inside the Motor</h2>
+                        <p>The induction motor has two main parts -- <em>stator</em> (receives 3-phase AC power input) and the <em>rotor</em> (collection of conducting bars short-circuited by end rings)</p><br>
+                    
+                        <p>The 3-phase alternating current in the coils produces a rotating magnetic field, which induces current on the rotor bars to make it turn</p><br>
+                    
+                        <p>An induction motor has neither brushes nor a permanent magnet, thus, making it <em>robust</em> and <em>powerful</em></p>
+                </div>
+                
+            </div>
+            
+            <div id="efficiency">
+                <br><br>
+                
+                <div class="tooltip">
+                    <img src="gallery/inductionMotor.gif" alt="inductMotor" class="imgHover">
+                    <span class="tooltiptext"><h2>The induction motor &#58;</h2>Weighs significantly less than the IC engine<br><br>Has a much higher output power-to-weight ratio &#40;8.5 kW/kg&#41;<br><br>Has no harmful emissions</span>
+                </div>
+                
+                <div class="tooltip">
+                    <img src="gallery/ICengine.gif" alt="ICengFlow" class="imgHover">
+                    <span class="tooltiptext"><h2>The IC engine &#58;</h2><br>Requires additional parts for rotational motion &#43; more<br><br>Inefficient power-to-weight ratio &#40;&#126; 0.8 kW/kg&#41;<br><br>Causes harmful emissions</span>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="footer">
+            <a id="returnBtn" href="index.html" target="_self"><i class="fa fa-arrow-left"></i> Return to Unit Home</a>
+            
+            <p><i>&#42; Video &amp; image courtesy <a href="https://www.youtube.com/user/TeslaMotors" target="_blank">Tesla</a></i></p>
+        </div>
+        
+        <script src="hoverScript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+</html>
