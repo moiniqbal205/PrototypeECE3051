@@ -20,15 +20,13 @@ h6 {
 
 /* Blinking Charger */
 .blink {
-    color: darkgreen;
-	animation: blink 1s linear infinite;
+    color: #006dae;
+	animation: blink 1.3s linear infinite;
     display: inline;
 }
 
 @keyframes blink{
-    0%{opacity: 0;}
-    50%{opacity: .5;}
-    100%{opacity: 1;}
+    50%{opacity: 0;}
 }
 /* **************** */
 
